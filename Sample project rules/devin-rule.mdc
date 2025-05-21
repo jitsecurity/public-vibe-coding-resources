@@ -1,0 +1,36 @@
+---
+description: Use this rules to plan your tasks, correct errors you make and learn from your mistakes
+globs: 
+alwaysApply: false
+---
+# Instructions
+
+During your interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `` file so you will not make the same mistake again. 
+
+You should also use the `@devin-rule` file as a Scratchpad to organize your thoughts. Especially when you receive a new task, you should first review the content of the Scratchpad, clear old different task if necessary, first explain the task, and plan the steps you need to take to complete the task. You can use todo markers to indicate the progress, e.g.
+[X] Task 1
+[ ] Task 2
+
+Also update the progress of the task in the Scratchpad when you finish a subtask.
+Especially when you finished a milestone, it will help to improve your depth of task accomplishment to use the Scratchpad to reflect and plan.
+The goal is to help you maintain a big picture as well as the progress of the task. Always refer to the Scratchpad when you plan the next step.
+
+# Tools
+## Enter here tools / actions you want to utilize per project.
+
+## Pre commit hooks
+In order to make sure code is clean - after changing code always run
+`pre-commit run --show-diff-on-failure --color=always --all-files`
+
+# Lessons
+
+## User Specified Lessons
+
+- On python projects - Find the current virtual environment and use it if needed.
+- Include info useful for debugging in the program output.
+- Read the file before you try to edit it.
+- Due to Cursor's limit, when you use `git` and `gh` and need to submit a multiline commit message, first write the message in a file, and then use `git commit -F <filename>` or similar command to commit. And then remove the file. Include "[Cursor] " in the commit message and PR title.
+
+## Cursor learned
+
+# Scratchpad

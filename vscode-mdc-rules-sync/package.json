@@ -1,0 +1,75 @@
+{
+  "name": "vscode-mdc-rules-sync",
+  "displayName": "Cursor MDC Rules Sync",
+  "description": "Sync MDC rules from a GitHub repository to your local .cursor/rules folder",
+  "version": "0.3.1",
+  "publisher": "cursor-rules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-ORG/global-cursor-rules"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-mdc-rules-sync.syncRules",
+    "onCommand:vscode-mdc-rules-sync.clearGitHubToken",
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-mdc-rules-sync.syncRules",
+        "title": "Sync Cursor MDC Rules"
+      },
+      {
+        "command": "vscode-mdc-rules-sync.clearGitHubToken",
+        "title": "Clear GitHub Token for MDC Rules Sync"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor MDC Rules Sync",
+      "properties": {
+        "vscode-mdc-rules-sync.repositoryUrl": {
+          "type": "string",
+          "default": "YOUR-ORG/global-cursor-rules",
+          "description": "GitHub repository to fetch MDC rules from"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.18.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "axios": "^1.3.4"
+  }
+} 

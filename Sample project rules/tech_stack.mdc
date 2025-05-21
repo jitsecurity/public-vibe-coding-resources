@@ -1,0 +1,13 @@
+---
+description: This is the project's tech stack
+globs: 
+alwaysApply: true
+---
+# Technical Stack
+
+- Python for the backend
+- HTML/JS for the frontend
+- AWS for the hosting
+- Separate enviroments: dev/cto/rocket/bandit are development environments, staging is staging, and prod is production.
+- Separate databases for dev, test, and prod
+- Python tests
