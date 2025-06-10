@@ -29,6 +29,8 @@ To get started, follow the [installation instructions](https://browsertools.agen
 # Swagger to MCP
 
 2 projects that help converting APIs to MCP
+
 https://github.com/brizzai/auto-mcp/tree/master
+
 https://github.com/IBM/mcp-context-forge
 
