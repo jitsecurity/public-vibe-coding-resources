@@ -26,4 +26,9 @@ To get started, follow the [installation instructions](https://browsertools.agen
 
 [Task Master](https://www.task-master.dev/) is a powerful project manager designed to help you ship tasks effortlessly. It streamlines project management and task tracking, making it easier to stay organized and productive.
 
+# Swagger to MCP
+
+2 projects that help converting APIs to MCP
+https://github.com/brizzai/auto-mcp/tree/master
+https://github.com/IBM/mcp-context-forge
 
