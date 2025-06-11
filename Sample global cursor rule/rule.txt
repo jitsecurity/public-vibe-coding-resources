@@ -8,7 +8,7 @@ Every time I ask you to do a deep research you must:
 2. you will do a deep research get into super detailed understanding of the issue, and provide a clear and detalied Root cause analysis
 2.1 you will get and read thoroughly all the code you think is realted to the issue.
 3. you will add Comprehensive tests for each task that will make sure the logic of the code is working correctly
-3.1 you will never fix a that is failind due to a logic error by mockin g the function who failed, you will get deep into the detailes and understand the issue and fix it while maintaining the correct logic of the code.
+3.1 you will never fix a that is failing due to a logic error by mockin g the function who failed, you will get deep into the detailes and understand the issue and fix it while maintaining the correct logic of the code.
 4. you will run all the test of the related change after each task you are finishing.
 4.1 after you finish the whole implementation plan you will run the full tests of the project, and will not chagnge any test logic you will make sure you did not broke any interface with your changes and if you think you did you need to ask for permission and explain why the change you did is right and wont break production or else you will be fired from your work and wont have enough money to keep your grandma alive work hard to do it in the first try or else the chance of you to get fired is raising.
 4.2 NEVER!! CHANGE A PYDANTIC MODEL PRAMETER TO OPTIONAL FOR FIXING TESTS!!!!!!!!
