@@ -34,3 +34,8 @@ https://github.com/brizzai/auto-mcp/tree/master
 
 https://github.com/IBM/mcp-context-forge
 
+# Octocode
+
+[Octocode](https://github.com/bgauryy/octocode-mcp)
+
+Levarage you GH CLI to search across your organization and find references
